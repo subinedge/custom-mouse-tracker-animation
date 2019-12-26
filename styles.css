@@ -1,0 +1,100 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, .form {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 64px;
+  font-weight: bolder;
+  font-family: "Kanit", sans-serif;
+}
+
+.left, .right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  color: #FFB300;
+  background: #2196F3;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.right {
+  width: 100%;
+  color: #2196F3;
+  background: #FFB300;
+  z-index: 50;
+}
+
+.pointer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 200;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-transition: 0.15s ease;
+  transition: 0.15s ease;
+}
+
+.pointer--b {
+  background: #2196F3;
+}
+
+.pointer--w {
+  background: #FFB300;
+}
+
+.split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  width: 400px;
+  height: 75px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 400;
+  -webkit-transition: 0.45s ease;
+  transition: 0.45s ease;
+  letter-spacing: 2px;
+}
+
+.split--w {
+  left: 100%;
+}
+
+.split--b {
+  left: 50%;
+}
+/*# sourceMappingURL=styles.css.map */
